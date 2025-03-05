@@ -1,0 +1,12 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+<https://example.org/IanVanKets> a foaf:Person;
+    foaf:name "Ian Van Kets"^^xsd:string;
+    foaf:age "22"^^xsd:integer;
+    foaf:birthday "2002-07-22"^^xsd:date;
+    foaf:gender "male";
+    foaf:topic_interest "sport";
+    foaf:nationality "Belgian";
+    foaf:knows <https://juliettevis.github.io/>,
+                <https://example.org/Kiara>.
+
