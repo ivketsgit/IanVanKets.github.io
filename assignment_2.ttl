@@ -5,9 +5,9 @@
     foaf:name "Ian Van Kets"^^xsd:string;
     foaf:age "22"^^xsd:integer;
     foaf:birthday "2002-07-22"^^xsd:date;
-    foaf:gender "male";
+    schema:gender "male";
     foaf:topic_interest "sport";
-    schema:nationality "Belgian";
+    schema:nationality <https://www.wikidata.org/entity/Q31>;
     schema:memberOf <https://pietercolpaert.be/teaching/kg/#2024-2025>;
     foaf:knows <https://juliettevis.github.io/introduction.jsonld>,
                 <https://kiaverme.github.io/Assignment2.jsonld>.
