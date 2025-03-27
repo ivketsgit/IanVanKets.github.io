@@ -1,0 +1,23 @@
+@prefix IVKPO: <https://ivketsgit.github.io/IanVanKets.github.io/ontology-IanVanKets.ttl> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://thumbs.dreamstime.com/z/handsome-spanish-adult-male-caucasian-male-selfy-102322058.jpg> a IVKPO:Photo ;
+    IVKPO:title "A selfy of Ian" ;
+    IVKPO:creator <https://ivketsgit.github.io/IanVanKets.github.io/assignment_2.ttl#me> ;
+    IVKPO:depictsPerson <https://ivketsgit.github.io/IanVanKets.github.io/assignment_2.ttl#me> ;
+    IVKPO:takenAt <http://example.org/places/MyHome> ;
+    IVKPO:description "A casual selfy of Ian taken at home." .
+
+<https://images.pexels.com/photos/7014881/pexels-photo-7014881.jpeg?h=1000&w=1500&fit=crop&markalign=center%2Cmiddle&txt=pexels.com&txtalign=center&txtsize=60&txtclr=eeffffff&txtfont=Avenir-Heavy&txtshad=10&mark=https:%2F%2Fassets.imgix.net%2F~text%3Ftxtclr%3Dfff%26txtsize%3D120%26txtpad%3D20%26bg%3D80000000%26txtfont%3DAvenir-Heavy%26txtalign%3Dcenter%26w%3D1300%26txt%3DFree%2520Stock%2520Photos> a IVKPO:Photo ;
+    IVKPO:title "FREE STOCK FOTO" ;
+    IVKPO:creator <http://example.org/people/JaneDoe> ;
+    IVKPO:depictsPerson <http://example.org/people/JohnDoe> ;
+    IVKPO:takenAt <http://example.org/places/Beach> ;
+    IVKPO:description "A FREE STOCK FOTO." .
+
+<http://example.org/places/Home> a IVKPO:Location ;
+    rdfs:label "Ian's Home" .
+
+<http://example.org/places/images_pexels_com_studio> a IVKPO:Location ;
+    rdfs:label "images.pexels.com studio" .

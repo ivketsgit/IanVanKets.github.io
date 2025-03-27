@@ -1,0 +1,62 @@
+@prefix IVKPO: <https://ivketsgit.github.io/IanVanKets.github.io/ontology-IanVanKets.ttl> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Class Mappings
+IVKPO:Person a rdfs:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A human being." ;
+    owl:equivalentClass foaf:Person .
+
+IVKPO:Photo a rdfs:Class ;
+    rdfs:label "Photo" ;
+    rdfs:comment "A digital or physical photograph." ;
+    owl:equivalentClass foaf:Image .
+
+IVKPO:Location a rdfs:Class ;
+    rdfs:label "Location" ;
+    rdfs:comment "A place where a photo was taken." .
+
+
+
+
+# Property Mappings
+IVKPO:PersonName a rdf:Property ;
+    rdfs:label "PersonName" ;
+    rdfs:comment "The name of a person." ;
+    rdfs:domain IVKPO:Person ;
+    rdfs:range rdfs:Literal ;
+    owl:equivalentProperty foaf:name .
+
+
+IVKPO:creator a rdf:Property ;
+    rdfs:label "Creator" ;
+    rdfs:comment "The photographer who took the photo." ;
+    rdfs:domain IVKPO:Photo ;
+    rdfs:range IVKPO:Person ;
+    owl:equivalentProperty foaf:maker .
+
+IVKPO:depictsPerson a rdf:Property ;
+    rdfs:label "Depicts" ;
+    rdfs:comment "Indicates a person being depicted." ;
+    rdfs:domain IVKPO:Photo ;
+    rdfs:range IVKPO:Person ;
+    owl:equivalentProperty foaf:depicts .
+
+IVKPO:title a rdf:Property ;
+    rdfs:label "Title" ;
+    rdfs:comment "The title or name of a photograph." ;
+    rdfs:domain IVKPO:Photo ;
+    rdfs:range rdfs:Literal ;
+    owl:equivalentProperty IVKPO:title .
+
+IVKPO:description a rdf:Property ;
+    rdfs:label "Description" ;
+    rdfs:comment "A textual description of the photo." ;
+    rdfs:domain IVKPO:Photo ;
+    rdfs:range rdfs:Literal ;
+    owl:equivalentProperty IVKPO:description .
+
+# FOAF does not have a direct equivalent for "takenAt," so no equivalent property is mapped.
