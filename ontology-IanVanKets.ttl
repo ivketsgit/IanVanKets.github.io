@@ -4,7 +4,6 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 
-# Class Mappings
 IVKPO:Person a rdfs:Class ;
     rdfs:label "Person" ;
     rdfs:comment "A human being." ;
@@ -22,7 +21,7 @@ IVKPO:Location a rdfs:Class ;
 
 
 
-# Property Mappings
+
 IVKPO:PersonName a rdf:Property ;
     rdfs:label "PersonName" ;
     rdfs:comment "The name of a person." ;
@@ -59,4 +58,3 @@ IVKPO:description a rdf:Property ;
     rdfs:range rdfs:Literal ;
     owl:equivalentProperty IVKPO:description .
 
-# FOAF does not have a direct equivalent for "takenAt," so no equivalent property is mapped.
